@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(asa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+.main-container h1{
+    font-family: cursive;
+    color:orangered;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0,0.6);
+    padding: 20px;
+    border-radius: 70px;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(47, 2, 247,0.2);
+    padding-bottom: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding:10px 20px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+   font-size: 20px;
+    
+}
+nav ul li a:hover{
+    color: rgb(0, 255, 145);
+    padding-left: 5px;
+    transition: 0.3s;
+}
+ input{
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(0, 0, 0,0.6);
+    text-align: center;
+    color: cyan;
+}
+.btn{
+    background: none;
+}
+.btn a{
+    border: none;
+    text-decoration: none;
+    background-color: rgb(251, 175, 44);
+    color: rgb(180, 52, 97);
+    padding: 9px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+
+}
+.btn a:hover{
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+.container img{
+    border: solid rgb(47, 2, 247);
+   width:250px;
+   margin-top: 50px;
+   background-color: rgb(47, 2, 247,0.1);
+   border-top-left-radius: 200px;
+   border-top-right-radius: 200px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   animation: slide 4s infinite linear alternate;
+}
+.container{
+    color: rgb(32, 255, 244);
+    float:left;
+    margin-left: 40px;
+}
+.container,.par{
+    width: 500px;
+}
+.container button{
+   background-color: rgb(47, 2, 247);
+   padding: 5px;
+   border: solid rgb(47, 2, 247);
+   border-radius: 30px;
+   color: orangered;
+   font-family: cursive;
+   font-weight: bolder;
+   margin-left: 10px;
+}
+.container button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: cyan;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(30%);
+    }
+
+    
+}

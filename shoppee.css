@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(ac.jpg);
+    background-attachment: fixed;
+   
+}
+
+.main-container h1 {
+    color: rgb(129, 255, 138);
+    text-align: center;
+    font-family:cursive;
+    margin-top: 30px;
+    font-size: 50px;
+  
+}
+h2{
+    color: rgb(129, 255, 138);
+    text-align: center;
+    font-family:cursive;
+    margin-top: 15px;
+}
+
+.user, .passwrd {
+    color: cyan;
+}
+
+.container input {
+    margin-top: 10px;
+    border: none;
+    color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 10px;
+    background: transparent;
+    background-color: rgb(127, 236, 236,0.2);
+    color: rgb(0, 187, 255);
+    border-bottom: solid 1px green;
+    
+}
+input::placeholder{
+    color: rgb(58, 203, 213);
+}
+
+
+
+
+form {
+    display: block;
+    float: right;
+    align-items: center;
+    border: solid 3px cyan;
+    padding: 5px;
+    height: 255px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 200px;
+    border-radius: 10px;
+}
+
+
+
+.btn {
+  width: 300px;
+  height: 45px;
+  margin-top: 15px;
+  
+   
+}
+.anchor{
+text-align: center;
+}
+.btn button{
+    width: 250px;
+    color: yellowgreen;
+    font-weight: bolder;
+    border-radius: 10px;
+    height: 35px;
+    background: none;
+    background-color: rgba(0, 255, 255, 0.2);;
+   
+}
+.btn button:hover{
+   border:solid cyan;
+
+    
+
+}
+.container input:hover{
+   
+    border-bottom: solid cyan;
+}
+.picture img {
+    border: solid cyan;
+    width: 300px;
+    margin-top: 150px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: slide 4s infinite linear alternate;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(40%);
+    }
+
+    30%{
+        
+        box-shadow: 0 0 40px 30px rgba(76, 0, 255, 0.8);
+    }
+    60%{
+       
+        box-shadow: 0 0 40px 30px rgba(209, 44, 173, 0.8);
+    }
+    90%{
+       
+        box-shadow: 0 0 40px 30px rgba(228, 43, 43, 0.8);
+    }
+    100%{
+        
+        box-shadow: 0 0 40px 30px rgba(228, 26, 151, 0.8);
+    }
+    0%{
+       
+        box-shadow: 0 0 40px 30px rgba(255, 0, 0, 0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    .picture img {
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    form {
+        margin-top: 120px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    .btn button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .picture img {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    form {
+        margin-top: 80px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .btn button {
+        width: 150px;
+    }
+}
